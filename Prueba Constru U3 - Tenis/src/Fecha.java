@@ -10,4 +10,27 @@
  */
 public class Fecha {
     
+    private int dia;
+    private int mes;
+    private int anio;
+    private int hora;
+
+    public int getDia() {
+        return dia;
+    }
+
+    public int getMes() {
+        return mes;
+    }
+
+    public int getAnio() {
+        return anio;
+    }
+
+    public int getHora() {
+        return hora;
+    }
+    
+    
+    
 }

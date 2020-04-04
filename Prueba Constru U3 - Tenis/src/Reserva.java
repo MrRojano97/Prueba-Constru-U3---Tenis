@@ -10,4 +10,40 @@
  */
 public class Reserva {
     
+    private int cancha;
+    private Fecha fecha;
+    private float coste;
+    private Sujeto sujeto;
+
+    public int getCancha() {
+        return cancha;
+    }
+
+    public Fecha getFecha() {
+        return fecha;
+    }
+
+    public float getCoste() {
+        return coste;
+    }
+
+    public void setCancha(int cancha) {
+        this.cancha = cancha;
+    }
+
+    public void setFecha(Fecha fecha) {
+        this.fecha = fecha;
+    }
+
+    public void setCoste(float coste) {
+        this.coste = coste;
+    }
+
+    public void setSujeto(Sujeto sujeto) {
+        this.sujeto = sujeto;
+    }
+    
+    
+    
+    
 }

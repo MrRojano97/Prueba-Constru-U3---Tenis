@@ -9,5 +9,24 @@
  * @author elias
  */
 public class Sujeto {
+    private boolean socio;
+    private float multa;
+    private Reserva reserva;
+    private Membresia membresia;
+    
+    public void multar (float multa) {
+        
+    }
+    
+    public void actualizarInteresMensual(){
+        
+    }
+
+    public boolean esSocio() {
+        return socio;
+    }
+    
+    
+    
     
 }
