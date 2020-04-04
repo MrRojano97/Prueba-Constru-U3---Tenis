@@ -22,11 +22,11 @@ public class Sujeto {
     }
     
     public void multar (float multa) {
-        
+        this.multa+=multa;
     }
     
     public void actualizarInteresMensual(){
-        
+        this.multa+=this.multa*0.1;
     }
 
     public float getMulta() {
