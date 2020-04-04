@@ -44,10 +44,9 @@ public class MembresiaTest {
         System.out.println("esPagada");
         Membresia instance = new Membresia();
         boolean expResult = false;
+        instance.setPagada(expResult);
         boolean result = instance.esPagada();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -58,10 +57,9 @@ public class MembresiaTest {
         System.out.println("getFechaInicio");
         Membresia instance = new Membresia();
         Fecha expResult = null;
+        instance.setFechaInicio(expResult);
         Fecha result = instance.getFechaInicio();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -72,10 +70,47 @@ public class MembresiaTest {
         System.out.println("esActiva");
         Membresia instance = new Membresia();
         boolean expResult = false;
+        instance.setActiva(expResult);
         boolean result = instance.esActiva();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+    }
+
+    /**
+     * Test of setPagada method, of class Membresia.
+     */
+    @Test
+    public void testSetPagada() {
+        System.out.println("setPagada");
+        boolean pagada = false;
+        Membresia instance = new Membresia();
+        instance.setPagada(pagada);
+        assertEquals(pagada, instance.esPagada());
+    }
+
+    /**
+     * Test of setFechaInicio method, of class Membresia.
+     */
+    @Test
+    public void testSetFechaInicio() {
+        System.out.println("setFechaInicio");
+        Fecha fechaInicio = new Fecha();
+        fechaInicio.setFecha(12, 4, 2020, 16);
+        Membresia instance = new Membresia();
+        instance.setFechaInicio(fechaInicio);
+        assertEquals(fechaInicio, instance.getFechaInicio());
+    }
+
+    /**
+     * Test of setActiva method, of class Membresia.
+     */
+    @Test
+    public void testSetActiva() {
+        System.out.println("setActiva");
+        boolean activa = false;
+        Membresia instance = new Membresia();
+        instance.setActiva(activa);
+        assertEquals(activa, instance.esActiva());
+
     }
     
 }

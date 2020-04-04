@@ -24,6 +24,20 @@ public class Membresia {
     public boolean esActiva() {
         return activa;
     }
+
+    public void setPagada(boolean pagada) {
+        this.pagada = pagada;
+    }
+
+    public void setFechaInicio(Fecha fechaInicio) {
+        this.fechaInicio = fechaInicio;
+    }
+
+    public void setActiva(boolean activa) {
+        this.activa = activa;
+    }
+    
+    
     
     
 }
