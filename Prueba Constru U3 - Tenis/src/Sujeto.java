@@ -13,6 +13,13 @@ public class Sujeto {
     private float multa;
     private Reserva reserva;
     private Membresia membresia;
+
+    public Sujeto(boolean socio, float multa, Reserva reserva, Membresia membresia) {
+        this.socio = socio;
+        this.multa = multa;
+        this.reserva = reserva;
+        this.membresia = membresia;
+    }
     
     public void multar (float multa) {
         

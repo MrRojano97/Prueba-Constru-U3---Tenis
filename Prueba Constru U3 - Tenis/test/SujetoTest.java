@@ -43,7 +43,7 @@ public class SujetoTest {
     public void testMultar() {
         System.out.println("multar");
         float multa = 0.0F;
-        Sujeto instance = new Sujeto();
+        Sujeto instance = null;
         instance.multar(multa);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
@@ -55,7 +55,7 @@ public class SujetoTest {
     @Test
     public void testActualizarInteresMensual() {
         System.out.println("actualizarInteresMensual");
-        Sujeto instance = new Sujeto();
+        Sujeto instance = null;
         instance.actualizarInteresMensual();
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
@@ -67,7 +67,7 @@ public class SujetoTest {
     @Test
     public void testEsSocio() {
         System.out.println("esSocio");
-        Sujeto instance = new Sujeto();
+        Sujeto instance = null;
         boolean expResult = false;
         boolean result = instance.esSocio();
         assertEquals(expResult, result);

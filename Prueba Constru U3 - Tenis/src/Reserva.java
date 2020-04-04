@@ -42,6 +42,12 @@ public class Reserva {
     public void setSujeto(Sujeto sujeto) {
         this.sujeto = sujeto;
     }
+
+    public Sujeto getSujeto() {
+        return sujeto;
+    }
+    
+    
     
     
     
