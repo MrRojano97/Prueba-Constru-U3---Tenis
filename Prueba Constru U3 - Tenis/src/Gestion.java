@@ -17,7 +17,7 @@ public class Gestion {
     private ArrayList<Sujeto> sujetos;
     private Fecha fecha;
     
-    private Gestion() {
+    public Gestion() {
         
     }
     

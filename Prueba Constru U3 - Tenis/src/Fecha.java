@@ -31,6 +31,8 @@ public class Fecha {
         return hora;
     }
     
-    
+    public void setFecha(int dia, int mes, int anio, int hora){
+        
+    }
     
 }
