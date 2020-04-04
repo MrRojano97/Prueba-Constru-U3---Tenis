@@ -29,6 +29,10 @@ public class Sujeto {
         
     }
 
+    public float getMulta() {
+        return multa;
+    }
+    
     public boolean esSocio() {
         return socio;
     }

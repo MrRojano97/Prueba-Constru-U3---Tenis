@@ -42,11 +42,10 @@ public class SujetoTest {
     @Test
     public void testMultar() {
         System.out.println("multar");
-        float multa = 0.0F;
-        Sujeto instance = null;
+        float multa = 15000;
+        Sujeto instance = new Sujeto(true, 5000, null, null);
         instance.multar(multa);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        assertEquals(multa+5000, instance.getMulta(), 0);
     }
 
     /**
@@ -55,10 +54,10 @@ public class SujetoTest {
     @Test
     public void testActualizarInteresMensual() {
         System.out.println("actualizarInteresMensual");
-        Sujeto instance = null;
+        Sujeto instance = new Sujeto(true, 5000, null, null);
+        float expResult = (float) (instance.getMulta()+instance.getMulta()*0.1);
         instance.actualizarInteresMensual();
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        assertEquals(instance.getMulta(), 5500, 0);
     }
 
     /**
@@ -67,12 +66,10 @@ public class SujetoTest {
     @Test
     public void testEsSocio() {
         System.out.println("esSocio");
-        Sujeto instance = null;
-        boolean expResult = false;
+        Sujeto instance = new Sujeto(true, 5000, null, null);
+        boolean expResult = true;
         boolean result = instance.esSocio();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
     
 }
