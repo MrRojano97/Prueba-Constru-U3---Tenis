@@ -44,10 +44,9 @@ public class FechaTest {
         System.out.println("getDia");
         Fecha instance = new Fecha();
         int expResult = 12;
+        instance.setFecha(expResult, expResult, expResult, expResult);
         int result = instance.getDia();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -58,10 +57,10 @@ public class FechaTest {
         System.out.println("getMes");
         Fecha instance = new Fecha();
         int expResult = 4;
+        instance.setFecha(expResult, expResult, expResult, expResult);
         int result = instance.getMes();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+
     }
 
     /**
@@ -72,10 +71,9 @@ public class FechaTest {
         System.out.println("getAnio");
         Fecha instance = new Fecha();
         int expResult = 2020;
+        instance.setFecha(expResult, expResult, expResult, expResult);
         int result = instance.getAnio();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -86,10 +84,9 @@ public class FechaTest {
         System.out.println("getHora");
         Fecha instance = new Fecha();
         int expResult = 16;
+        instance.setFecha(expResult, expResult, expResult, expResult);
         int result = instance.getHora();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -104,8 +101,12 @@ public class FechaTest {
         int hora = 16;
         Fecha instance = new Fecha();
         instance.setFecha(dia, mes, anio, hora);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        
+        assertEquals(12, instance.getDia());
+        assertEquals(4, instance.getMes());
+        assertEquals(2020, instance.getAnio());
+        assertEquals(16, instance.getHora());
+        
     }
     
 }
